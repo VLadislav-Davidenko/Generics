@@ -19,7 +19,7 @@ public class Main {
         StringData convert1 = DocumentProcessorUtil.convert(bin);
         StringData convert2 = DocumentProcessorUtil.convert(num);
 
-        System.out.println(convert.data);
+       /* System.out.println(convert.data);
         System.out.println(convert.id);
         System.out.println(convert.type);
 
@@ -33,18 +33,25 @@ public class Main {
 
         System.out.println(convert2.data);
         System.out.println(convert2.id);
-        System.out.println(convert2.type);
+        System.out.println(convert2.type);*/
 
         System.out.println("=".repeat(30));
 
         String s = xml.convertToString();
         System.out.println(s);
+        System.out.println(xml.getType());
+
+        System.out.println("=".repeat(30));
 
         String s1 = bin.convertToString();
         System.out.println(s1);
+        System.out.println(bin.getType());
+
+        System.out.println("=".repeat(30));
 
         String s2 = num.convertToString();
         System.out.println(s2);
+        System.out.println(num.getType());
 
 
 
