@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Arrays;
 
-public class BinaryData extends AbstractData implements Storable<BinaryData>{
+public class BinaryData extends AbstractData implements Storable<byte[]>{
     final Typ type = Typ.BIN;
     byte[] data = {1,2,3,4};
 
@@ -17,14 +17,13 @@ public class BinaryData extends AbstractData implements Storable<BinaryData>{
 
 
     @Override
-    public BinaryData read() {
+    public byte[] read() {
         return null;
     }
 
     @Override
-    public void write(BinaryData data) {
-
-
+    public void write(byte[] name) {
+        data = name;
     }
 
     @Override

@@ -1,6 +1,6 @@
 package com.company;
 
-public class NumericData extends AbstractData implements Storable<NumericData>{
+public class NumericData extends AbstractData implements Storable<Number>{
     final Typ type = Typ.NUM;
     Number data = 123;
 
@@ -15,12 +15,13 @@ public class NumericData extends AbstractData implements Storable<NumericData>{
 
 
     @Override
-    public NumericData read() {
+    public Number read() {
         return null;
     }
 
     @Override
-    public void write(NumericData data) {
+    public void write(Number name) {
+        data = name;
 
     }
 
