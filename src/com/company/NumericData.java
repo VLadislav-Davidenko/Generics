@@ -2,10 +2,15 @@ package com.company;
 
 public class NumericData extends AbstractData implements Storable<NumericData>{
     final Typ type = Typ.NUM;
-    Number data;
+    Number data = 123;
 
     public NumericData(long id) {
         super(id);
+    }
+
+    @Override
+    public String convertToString() {
+        return data.toString();
     }
 
 

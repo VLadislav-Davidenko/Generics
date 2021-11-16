@@ -11,9 +11,18 @@ public class Main {
         BinaryData bin = new BinaryData(DocumentProcessorUtil.ID_COUNTER++);
         NumericData num = new NumericData(DocumentProcessorUtil.ID_COUNTER++);
 
-        DocumentProcessorUtil.build(xml,"<?xml version=\"1.0\"?><Tests>qwerty</Tests>");
-        DocumentProcessorUtil.build(bin,b);
-        DocumentProcessorUtil.build(num,123.1241241);
+        //DocumentProcessorUtil.build(xml,"<?xml version=\"1.0\"?><Tests>qwerty</Tests>");
+        //DocumentProcessorUtil.build(bin,b);
+        //DocumentProcessorUtil.build(num,123.1241241);
+
+        String s = xml.convertToString();
+        System.out.println(s);
+
+        String s1 = bin.convertToString();
+        System.out.println(s1);
+
+        String s2 = num.convertToString();
+        System.out.println(s2);
 
 
     }

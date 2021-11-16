@@ -9,6 +9,11 @@ public class XmlData extends AbstractData implements Storable<XmlData> {
         super(id);
     }
 
+    @Override
+    public String convertToString() {
+        return data;
+    }
+
 
     @Override
     public XmlData read() {

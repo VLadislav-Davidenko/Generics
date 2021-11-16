@@ -10,4 +10,6 @@ public abstract class AbstractData {
     public long getId() {
         return id;
     }
+
+    public abstract String convertToString();
 }
