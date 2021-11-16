@@ -6,10 +6,10 @@ public class Main {
 
 
     public static void main(String[] args) {
-        XmlData xml = new XmlData(DocumentProcessorUtil.ID_COUNTER++);
+        XmlData xml = new XmlData(DocumentProcessorUtil.ID_COUNTER);
         byte[] b = "Данные в байтах".getBytes();
-        BinaryData bin = new BinaryData(DocumentProcessorUtil.ID_COUNTER++);
-        NumericData num = new NumericData(DocumentProcessorUtil.ID_COUNTER++);
+        BinaryData bin = new BinaryData(DocumentProcessorUtil.ID_COUNTER);
+        NumericData num = new NumericData(DocumentProcessorUtil.ID_COUNTER);
 
         DocumentProcessorUtil.build(xml,"<?xml version=\"1.0\"?><Tests>qwerty</Tests>");
         DocumentProcessorUtil.build(bin,b);
